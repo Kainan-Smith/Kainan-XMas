@@ -1,5 +1,97 @@
-@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Permanent+Marker&display=swap');
+/*------------Fonts------------*/
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Permanent+Marker&family=Yuji+Mai&display=swap');
 
 .xmas {
     font-family: "Mountains of Christmas", serif;
+    font-style: normal;
+  }
+
+.yuji {
+  font-family: "Yuji Mai", serif;
+  font-weight: 400;
+  font-style: normal;
 }
+
+/*------------End of Fonts------------*/
+
+.card header {
+  background-color: green;
+}
+
+.navbar {
+  grid-template-columns: 1/4;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: #ace6ae;
+  border: 2px solid #4CAF50;
+}
+/*-----------------Tablet Media Query-----------------*/
+@media screen and (min-width: 768px) {
+  .header,
+  .main-nav {
+      display: flex;
+  }
+
+  .header {
+      flex-direction: column;
+      justify-content: space-between;
+      .header {
+          width: 80%;
+          margin: 0% auto;
+          min-width: 768px;
+          max-width: 1023px;
+      }
+  }
+  
+  .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(230px, 1fr));
+      grid-gap: 20px;
+      padding: 20px;
+  }
+
+}
+/*-----------------End of Tablet Media Query-----------------*/
+
+/*-----------------Desktop/Laptop Media Query-----------------*/
+@media screen and (min-width: 1280px) {
+
+  .header {
+      flex-direction: column;
+      justify-content: space-between;
+  }
+
+  .container {
+      grid-template-columns: 1fr 1fr;
+      grid-auto-rows: minmax(100px, auto);
+  }
+
+  .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(230px, 1fr));
+      grid-gap: 20px;
+      padding: 20px;
+  }
+
+}
+/*-----------------End of Desktop/Laptop Media Query-----------------*/
+
+/*-----------------Phone Media Query---------------------*/
+@media screen and (max-width: 767px) {
+  .picture {
+      height: 70%, auto;
+  }
+
+  .grid {
+      display: grid;
+      grid-template-columns: repeat(1, minmax(230px, 1fr));
+      grid-gap: 20px;
+      padding: 20px;
+  }
+
+}
+/*--------------End of Phone Media Query------------*/
