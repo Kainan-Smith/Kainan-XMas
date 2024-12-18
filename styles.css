@@ -14,21 +14,49 @@
 
 /*------------End of Fonts------------*/
 
-.card header {
-  background-color: green;
+html {
+  background-color:#dfdfdf;
 }
 
+/*-------------------Nav/Sticky-----------------------*/
 .navbar {
   grid-template-columns: 1/4;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 2px;
+}
+
+.icon {
+  width: 30px;
+  padding-right: 1006px;
+}
+
+.nav-item {
+  padding-left: 48px;
+  font-size: 22px;
 }
 
 .sticky {
   position: sticky;
   top: 0;
-  padding: 5px;
   background-color: #ace6ae;
   border: 2px solid #4CAF50;
 }
+/*-------------------End of Nav/Sticky-----------------------*/
+
+/*-------------------Media Card-----------------------*/
+.card header {
+  background-color: #008f19;
+  color: #c0bca2;
+}
+
+.card {
+  border: 1px solid;
+  border-radius: 5px;
+}
+/*-------------------End of Media Card-----------------------*/
+
 /*-----------------Tablet Media Query-----------------*/
 @media screen and (min-width: 768px) {
   .header,
