@@ -47,6 +47,7 @@ html {
 
 /*-------------------Media Card-----------------------*/
 .card header {
+  font-size: 20px;
   background-color: #008f19;
   color: #c0bca2;
 }
